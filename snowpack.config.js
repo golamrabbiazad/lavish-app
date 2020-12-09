@@ -1,4 +1,5 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+
 module.exports = {
   mount: {
     public: '/',
@@ -9,14 +10,12 @@ module.exports = {
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
   ],
-  install: [
-    /* ... */
-  ],
+  install: ['web-vitals'],
   installOptions: {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    port: 3000,
   },
   buildOptions: {
     /* ... */
